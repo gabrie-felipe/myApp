@@ -2,17 +2,15 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 2</ion-title>
+        <ion-title>Area De Menu</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 2</ion-title>
-        </ion-toolbar>
-      </ion-header>
       
-      <ExploreContainer name="Tab 2 page" />
+<div class="texto">
+  <h1>Pagina De Navegação</h1>
+</div>
+
     </ion-content>
   </ion-page>
 </template>
@@ -20,10 +18,24 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+
 
 export default defineComponent({
   name: 'Tab2Page',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: {IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 });
 </script>
+
+<style>
+h1{
+  color: rgb(255, 0, 0);
+}
+div{
+  text-align: center;
+  font-family: sans-serif;
+}
+.texto{
+background-color: rgba(194, 194, 194, 0.295);
+margin: 70px;
+}
+</style>
